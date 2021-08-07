@@ -1,0 +1,206 @@
+// - Soft red: hsl(7, 99%, 70%)
+// - Yellow: hsl(51, 100%, 49%)
+// - Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
+// - Dark blue (photography text): hsl(198, 62%, 26%)
+// - Dark moderate cyan (footer): hsl(168, 34%, 41%)
+
+// ### Neutral
+
+// - Very dark desaturated blue: hsl(212, 27%, 19%)
+// - Very dark grayish blue: hsl(213, 9%, 39%)
+// - Dark grayish blue: hsl(232, 10%, 55%)
+// - Grayish blue: hsl(210, 4%, 67%)
+// - White: hsl(0, 0%, 100%)
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+// font-family: 'Barlow', sans-serif; 600
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+// font-family: 'Fraunces', serif; 700, 900
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+}
+
+.hero {
+  height: 70vh;
+  background-image: url(../images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  position: relative;
+  &__title {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    width: 90%;
+    font-size: 45px;
+    font-weight: 900;
+    margin: 0 auto;
+    align-self: flex-end;
+  }
+  &__arrow {
+    text-align: center;
+    margin: 0 auto;
+    align-self: flex-end;
+  }
+}
+
+.navigation {
+  margin-top: 8%;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  &__logo {
+    width: 150px;
+    cursor: pointer;
+  }
+  &__icon {
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+  }
+}
+
+.dropdown {
+  clip-path: polygon(0 6%, 94% 6%, 100% 0, 100% 23%, 100% 100%, 0 100%);
+  position: absolute;
+  opacity: 0;
+  top: 15%;
+  display: none;
+  background-color: #fff;
+  width: 90%;
+  padding: 60px 40px 40px 40px;
+  margin: 0 auto;
+  list-style: none;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  &__item {
+    color: hsl(232, 10%, 55%);
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  &__link {
+    display: inline-block;
+    font-size: 20px;
+  }
+}
+
+.contact {
+  font-family: "Fraunces", serif;
+  color: #000;
+  background-color: hsl(51, 100%, 49%);
+  border-radius: 50px;
+  padding: 15px 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  padding: 50px 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: hsl(212, 27%, 19%);
+  }
+  &__text {
+    line-height: 1.5;
+    margin-bottom: 25px;
+    color: hsl(210, 4%, 67%);
+  }
+  &__link {
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+  }
+  &__1 {
+    height: 300px;
+    background-image: url(../images/mobile/image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  &__3 {
+    height: 300px;
+    background-image: url(../images/mobile/image-stand-out.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  &__5 {
+    background-image: url(../images/mobile/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    align-items: flex-end;
+  }
+  &__6 {
+    background-image: url(../images/mobile/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    align-items: flex-end;
+  }
+}
+
+.green {
+  color: hsl(167, 40%, 24%);
+}
+
+.blue {
+  color: hsl(198, 62%, 26%);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &__item {
+    height: 50vw;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &-1 {
+      background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+    }
+    &-2 {
+      background-image: url(../images/mobile/image-gallery-orange.jpg);
+    }
+    &-3 {
+      background-image: url(../images/mobile/image-gallery-cone.jpg);
+    }
+    &-4 {
+      background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+    }
+  }
+}
+
+.footer {
+}
