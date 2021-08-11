@@ -81,16 +81,13 @@ body {
 .dropdown {
   clip-path: polygon(0 6%, 94% 6%, 100% 0, 100% 23%, 100% 100%, 0 100%);
   position: absolute;
-  opacity: 0;
   top: 15%;
-  display: none;
   background-color: #fff;
   width: 90%;
   padding: 60px 40px 40px 40px;
   margin: 0 auto;
   list-style: none;
-  display: inline-block;
-  display: flex;
+  display: none;
   flex-direction: column;
   &__item {
     color: hsl(232, 10%, 55%);
@@ -234,7 +231,6 @@ body {
 }
 
 .footer {
-  // background-color: hsl(168, 34%, 41%);
   background-color: #90d4c5;
   padding: 60px 20px 80px 20px;
   &__title {
