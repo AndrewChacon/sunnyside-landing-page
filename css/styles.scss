@@ -180,6 +180,49 @@ body {
   color: hsl(198, 62%, 26%);
 }
 
+.testimonials {
+  padding: 80px 40px;
+  &__title {
+    color: hsl(210, 4%, 67%);
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+}
+
+.client {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+  }
+  &__card {
+    &__image {
+      // width: 100%;
+      border-radius: 50%;
+      width: 80px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      color: hsl(213, 9%, 39%);
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    &__name {
+      font-family: "Fraunces", serif;
+      color: hsl(212, 27%, 19%);
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+    &__position {
+      color: hsl(210, 4%, 67%);
+      font-size: 14px;
+    }
+  }
+}
+
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -187,5 +230,35 @@ body {
     width: 50vw;
     height: 50vw;
     object-fit: cover;
+  }
+}
+
+.footer {
+  // background-color: hsl(168, 34%, 41%);
+  background-color: #90d4c5;
+  padding: 60px 20px 80px 20px;
+  &__title {
+    color: hsl(168, 43%, 30%);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &__nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 60px;
+  }
+  &__item {
+    color: hsl(168, 34%, 41%);
+    text-decoration: none;
+  }
+  &__media {
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  i {
+    color: hsl(168, 34%, 41%);
   }
 }

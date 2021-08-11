@@ -213,6 +213,51 @@ body {
   color: #19536b;
 }
 
+.testimonials {
+  padding: 80px 40px;
+}
+
+.testimonials__title {
+  color: #a7abae;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.client__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 60px;
+}
+
+.client__card__image {
+  border-radius: 50%;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.client__card__text {
+  color: #5a636c;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.client__card__name {
+  font-family: "Fraunces", serif;
+  color: #23303e;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.client__card__position {
+  color: #a7abae;
+  font-size: 14px;
+}
+
 .gallery {
   display: -ms-grid;
   display: grid;
@@ -225,5 +270,43 @@ body {
   height: 50vw;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.footer {
+  background-color: #90d4c5;
+  padding: 60px 20px 80px 20px;
+}
+
+.footer__title {
+  color: #2c6d60;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer__nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 60px;
+}
+
+.footer__item {
+  color: #458c7e;
+  text-decoration: none;
+}
+
+.footer__media {
+  margin: 0 auto;
+  width: 150px;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer i {
+  color: #458c7e;
 }
 /*# sourceMappingURL=styles.css.map */
