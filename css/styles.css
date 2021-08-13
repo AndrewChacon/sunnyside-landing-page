@@ -279,7 +279,7 @@ body {
 .footer__title {
   color: #2c6d60;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .footer__nav {
@@ -307,5 +307,97 @@ body {
 
 .footer i {
   color: #458c7e;
+}
+
+@media (min-width: 700px) {
+  .hero {
+    background: url(../images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  .hero__title {
+    font-size: 60px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .hero__arrow {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .navigation {
+    margin: 0;
+    margin-top: 40px;
+  }
+  .navigation__logo {
+    width: 200px;
+  }
+  .cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .card {
+    height: 40vw;
+    width: 50vw;
+    text-align: left;
+  }
+  .card__container {
+    padding: 20px 10%;
+  }
+  .card__1 {
+    background: url(../images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .card__2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .card__3 {
+    background: url(../images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .card__5 {
+    background: url(../images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .card__6 {
+    background: url(../images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .card__5, .card__6 {
+    text-align: center;
+    height: 50vw !important;
+  }
+  .gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .gallery__item {
+    width: 25vw;
+    height: 600px;
+  }
+  .testimonials {
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+  .testimonials__title {
+    margin-bottom: 60px;
+  }
+  .client__container {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

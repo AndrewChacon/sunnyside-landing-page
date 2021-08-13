@@ -240,7 +240,7 @@ body {
   &__title {
     color: hsl(168, 43%, 30%);
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   &__nav {
     display: grid;
@@ -260,5 +260,96 @@ body {
   }
   i {
     color: hsl(168, 34%, 41%);
+  }
+}
+
+@media (min-width: 700px) {
+  .hero {
+    background: url(../images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    &__title {
+      font-size: 60px;
+      align-self: flex-start;
+    }
+    &__arrow {
+      align-self: flex-start;
+    }
+  }
+  .navigation {
+    margin: 0;
+    margin-top: 40px;
+    &__logo {
+      width: 200px;
+    }
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card {
+    height: 40vw;
+    width: 50vw;
+    text-align: left;
+    &__container {
+      padding: 20px 10%;
+    }
+    &__1 {
+      // col-row: 2 / 3;
+      background: url(../images/desktop/image-transform.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &__2 {
+      grid-row: 1 / 2;
+    }
+    &__3 {
+      background: url(../images/desktop/image-stand-out.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &__5 {
+      background: url(../images/desktop/image-graphic-design.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &__6 {
+      background: url(../images/desktop/image-photography.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &__5,
+    &__6 {
+      text-align: center;
+      height: 50vw !important;
+    }
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    &__item {
+      width: 25vw;
+      height: 600px;
+    }
+  }
+
+  .testimonials {
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+    &__title {
+      margin-bottom: 60px;
+    }
+  }
+
+  .client {
+    &__container {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+    }
   }
 }
